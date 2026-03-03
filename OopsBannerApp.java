@@ -1,59 +1,17 @@
 public class OopsBannerApp {
 
     public static void main(String[] args) {
-        printBanner();
-    }
 
-    // Static method as required in UC3
-    public static void printBanner() {
+        String[] banner = {
+            " *****   *****   *****   ***** ",
+            "*     * *     * *     * *     *",
+            "*     * *     * *     * *     *",
+            "*     * *     * *     * *     *",
+            " *****   *****   *****   ***** "
+        };
 
-        System.out.println(String.join(" ",
-                " ***  ",
-                " ***  ",
-                " **** ",
-                " **** "
-        ));
-
-        System.out.println(String.join(" ",
-                "*   * ",
-                "*   * ",
-                "*     ",
-                "*     "
-        ));
-
-        System.out.println(String.join(" ",
-                "*   * ",
-                "*   * ",
-                "***   ",
-                " ***  "
-        ));
-
-        System.out.println(String.join(" ",
-                "*   * ",
-                "*   * ",
-                "*     ",
-                "    * "
-        ));
-
-        System.out.println(String.join(" ",
-                "*   * ",
-                "*   * ",
-                "*     ",
-                "    * "
-        ));
-
-        System.out.println(String.join(" ",
-                "*   * ",
-                "*   * ",
-                "*     ",
-                "*   * "
-        ));
-
-        System.out.println(String.join(" ",
-                " ***  ",
-                " ***  ",
-                "*     ",
-                " ***  "
-        ));
+        for (String line : banner) {
+            System.out.println(line);
+        }
     }
 }
